@@ -16,7 +16,10 @@ namespace 可空int计算测试
 
 
             //增加kjlf阿里的设计开发绿色饭店
-
+            Dictionary<int, string> dictionary = new Dictionary<int, string> {
+                [0]="Hello",
+                [3]="World"
+            };
            
         }
 
