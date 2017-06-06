@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lock关键字测试，希望知道用两个指向同一个obj的对象，能否锁住", "lockTest\lock关键字测试，希望知道用两个指向同一个obj的对象，能否锁住.csproj", "{33B30038-239F-4A43-9CE1-F8EB9C9DCFCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Net下各个不同类的作用", "System.Net下各个不同类的作用\System.Net下各个不同类的作用.csproj", "{9418D72F-67BA-4421-AE08-83873C45427B}"
@@ -12,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A856353E-CFCA-460C-82AD-8998545BFA16}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
+		readme.txt = readme.txt
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 		杨怿炜的测试垃圾箱.vsmdi = 杨怿炜的测试垃圾箱.vsmdi
 	EndProjectSection
@@ -22,10 +25,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "可空int计算测试", "�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Train", "Train\Train.csproj", "{A347F990-24A7-4C48-B3AC-116B85E51B3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task与Await关系验证", "Task与Await关系验证\Task与Await关系验证.csproj", "{B72DD362-0ED6-401F-A88D-C260893023D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task类研究", "Task类研究\Task类研究.csproj", "{87FB0484-D876-470A-B36B-4AD2C3A6E18D}"
+EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = 杨怿炜的测试垃圾箱.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -105,8 +109,35 @@ Global
 		{A347F990-24A7-4C48-B3AC-116B85E51B3D}.Release|Mixed Platforms.Build.0 = Release|x86
 		{A347F990-24A7-4C48-B3AC-116B85E51B3D}.Release|x86.ActiveCfg = Release|x86
 		{A347F990-24A7-4C48-B3AC-116B85E51B3D}.Release|x86.Build.0 = Release|x86
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Debug|x86.Build.0 = Debug|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Release|x86.ActiveCfg = Release|Any CPU
+		{B72DD362-0ED6-401F-A88D-C260893023D2}.Release|x86.Build.0 = Release|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Debug|x86.Build.0 = Debug|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Release|x86.ActiveCfg = Release|Any CPU
+		{87FB0484-D876-470A-B36B-4AD2C3A6E18D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = 杨怿炜的测试垃圾箱.vsmdi
 	EndGlobalSection
 EndGlobal
